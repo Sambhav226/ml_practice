@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics Playground</title>
+</head>
+<body>
+    <h1>Statistics Playground</h1>
+    <form action="/generate" method="post">
+        <label for="distribution_type">Select Distribution:</label>
+        <select name="distribution_type" id="distribution_type">
+            <option value="binomial">Binomial</option>
+            <option value="normal">Normal</option>
+            <option value="bernoulli">Bernoulli</option>
+        </select>
+        <br>
+        <label for="sample_size">Sample Size:</label>
+        <input type="number" name="sample_size" id="sample_size" value="100">
+        <br>
+        <input type="submit" value="Generate">
+    </form>
+</body>
